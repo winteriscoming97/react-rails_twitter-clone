@@ -1,11 +1,31 @@
-$red: #af5;
+$primary: #1da1f2;
 
-div {
-  color: $red;
-  h1 {
-    font-size: 3em;
-  }
-  h2 {
-    color: lightblue;
-  }
+span {
+  color: white;
+  font-size: 2em;
+}
+
+input:focus,
+.nav-link:focus {
+  outline: none !important;
+}
+
+nav {
+  overflow: hidden;
+}
+
+.nav-link {
+  transition: all .15s linear;
+  color: grey;
+}
+
+.nav-link:hover {
+  background: rgba(0, 50, 155, .1);
+  color: $primary;
+}
+
+/* Need to dynamically do this with JS, placehold for now  */
+.nav-link:focus {
+  border-bottom: 2px solid $primary;
+  color: $primary;
 }
